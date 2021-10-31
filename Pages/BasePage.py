@@ -16,6 +16,7 @@ class BasePage:
         WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located(by_locator)).send_keys(text)
 
     def get_text(self, by_locator):
+        print("4: ", self.driver)
         element = WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located(by_locator))
         return element.text
 
