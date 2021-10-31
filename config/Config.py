@@ -11,3 +11,4 @@ class TestData:
     DASHBOARD = "Dashboard\nOverview of your store"
 
     NAME = "John"
+    ADMIN = "Edit administrator\nManage users able to access the administration panel"
