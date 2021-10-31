@@ -16,3 +16,7 @@ class Test_AdminPage(BaseTest):
     def test_check_if_in_admin_page(self):
         text = self.adminPage.get_admin_main_title()
         assert text == TestData.ADMIN
+
+    def test_check_select(self):
+        state_name = self.adminPage.select_state_by_number(10)
+        assert state_name == "Amharic"
