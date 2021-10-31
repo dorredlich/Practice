@@ -6,9 +6,9 @@ from Pages.LoginPage import LoginPage
 
 class Test_Login(BaseTest):
 
-    # @pytest.fixture(autouse=True)
-    # def init_data(self):
-    #     self.loginPage = LoginPage(self.driver)
+    @pytest.fixture(autouse=True)
+    def init_data(self):
+        self.loginPage = LoginPage(self.driver)
 
     def test_login(self):
         self.loginPage = LoginPage(self.driver)

@@ -23,5 +23,8 @@ class BasePage:
         WebDriverWait(self.driver, 20).until(EC.title_is(title))
         return self.driver.title
 
+    def is_visible(self, by_locator):
+        return bool(WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located(by_locator)))
+
     def select_element(self, by_locator):
         return Select(WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located(by_locator)))

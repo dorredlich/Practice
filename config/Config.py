@@ -7,3 +7,7 @@ class TestData:
 
     USERNAME = "sylius@example.com"
     PASSWORD = "sylius"
+
+    DASHBOARD = "Dashboard\nOverview of your store"
+
+    NAME = "John"
